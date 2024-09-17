@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "66dc7df3a86a9b53e687195b"
+  },
+  "name": "Darshan S P",
+  "email": "sdarshanpgowda2003@gmail.com",
+  "password": "$2a$10$GG9yFUz49QUEg1t0rw96W.q2eSJ5gpVC/JrXiYVxex1LW.q2TIH1u",
+  "level": 2,
+  "userId": "975043c8-5181-495e-bf51-f8a7a281d7b5",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66dc86f460b8a90002dae3d0"
+  },
+  "name": "Darshan S P",
+  "email": "kdarshanpgowda2003@gmail.com",
+  "password": "$2a$10$.70NHRFqmeH1pNQMRV38au0PfhBJDJO7GBoY9Lkoybcc03U93Huoi",
+  "level": 1,
+  "userId": "dad43e44-1e9e-4c34-b816-8b4eca533200",
+  "__v": 0
+}]

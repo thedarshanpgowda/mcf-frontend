@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "66e45527dcbe1a5c9cc0528d"
+  },
+  "yaw": {
+    "min": {
+      "$numberDecimal": "-1.49"
+    },
+    "max": {
+      "$numberDecimal": "-1.47"
+    }
+  },
+  "roll": {
+    "min": {
+      "$numberDecimal": "-3.32"
+    },
+    "max": {
+      "$numberDecimal": "-3.33"
+    }
+  },
+  "pitch": {
+    "min": {
+      "$numberDecimal": "-3.4"
+    },
+    "max": {
+      "$numberDecimal": "-3.6"
+    }
+  },
+  "gsat_number": "GSAT-1",
+  "period": 1,
+  "id": "66e414f1944b8a64a6c0118c",
+  "samplingTime": {
+    "max": 10,
+    "min": 0
+  }
+}]
