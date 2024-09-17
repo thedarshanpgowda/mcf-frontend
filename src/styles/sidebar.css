@@ -1,0 +1,72 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 17vw;
+  background-color: #000000;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-title {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  margin: 7px 0px;
+  border-radius: 10px;
+}
+
+.sidebar-link:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.user-info {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.username {
+  font-size: 1.7rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logout {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: auto;
+  /* Pushes the logout button to the bottom */
+}

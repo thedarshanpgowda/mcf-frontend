@@ -1,0 +1,706 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 17vw;
+  background-color: #000000;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-title {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.main-header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  background: #f5f5f5;
+}
+
+.main-header p:first-child {
+  margin: 0 10px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.main-header p:last-child {
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  margin: 7px 0px;
+  border-radius: 10px;
+}
+
+.sidebar-link:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.user-info {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.username {
+  font-size: 1.7rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logout {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: auto;
+  /* Pushes the logout button to the bottom */
+}
+
+/* --------------------------------login------------------------------------- */
+/* Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Login Box */
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  /* Shadow without borders */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.input:focus {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 0%;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.logout {
+  align-self: flex-end;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: auto;
+}
+
+/* --------------------------home page ------------------------------------------ */
+.home {
+  width: 83vw;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.start-div,
+.end-div {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.start-div input,
+.end-div input {
+  margin-left: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.start-date,
+.end-date {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+}
+
+.gsat,
+.pid {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+  font-size: 1.3rem;
+}
+
+.submit {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.data-button {
+  margin: 0 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  color: #343a40;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.data-button:hover {
+  background-color: #ced4da;
+}
+
+.data-button.active {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.data-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.data-table th {
+  background-color: #f8f9fa;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* -------------------------------admin page-------------------------------- */
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80vw;
+  /* Adjust margin based on sidebar width */
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.settings-icon {
+  position: absolute;
+  right: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.admin-container h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.add-gsat {
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.form-section,
+.gsat-pid-section,
+.user-list {
+  background-color: #ffffff;
+  box-shadow: rgba(128, 128, 128, 0.251) 3px 3px 10px;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.add-user-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-user-form input,
+.add-user-form select {
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.add-user-form .email {
+  width: 400px;
+}
+
+.add-user-form .level {
+  width: 200px;
+}
+
+button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #2196f3;
+}
+
+button.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+button.edit-btn {
+  background-color: #2196f3;
+  color: white;
+  margin-left: 10px;
+}
+
+.table-container {
+  max-height: 300px;
+  /* Set desired max-height for the table */
+  overflow-y: auto;
+  /* Enable vertical scroll */
+  overflow-x: hidden;
+  /* Hide horizontal scroll */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* Prevents disorientation for long content */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+  /* Wrap long text */
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gsat-pid-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.gsat-pid-conf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gsat-pid-conf select {
+  width: 250px;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.gsat-pid-conf option {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.gsat-pid-conf label {
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 50px;
+}
+
+.axis-config {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  align-self: center;
+  margin-top: 20px;
+  width: 650px;
+}
+
+.axis-config label {
+  margin-right: 10px;
+  width: 80px;
+  /* Adjust width if needed */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 150px;
+  /* Adjust width to make space for labels */
+}
+
+.axis-config input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 200px;
+  /* Adjust width of input fields */
+}
+
+.add-gsat-section {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.add-gsat-section input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.gsat-pid-section button {
+  width: auto;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.delete-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+
+.delete-section input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 200px;
+  /* Adjust width of input fields */
+  margin-left: 20px;
+}
+
+.delete-section button {
+  margin-top: 0px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: blur(4px);
+  background-color: #00000055;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 17vw;
+}
+
+/* ----------------------------------------HISTORY------------------------------------------------ */
+.history-container {
+  width: 80vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-container h1 {
+  margin: 40px 20px;
+}
+
+.history-table {
+  text-align: left;
+  box-shadow: rgba(128, 128, 128, 0.414) 10px 10px 50px;
+  border-collapse: separate;
+  width: 91%;
+  margin: 50px;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.history-table th,
+.history-table td {
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.search-box {
+  border: #343a40;
+  font-size: 2rem;
+  height: 50px;
+  align-self: center;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  width: 500px;
+  /* Adjust width of input fields */
+  box-shadow: rgba(128, 128, 128, 0.414) 2px 2px;
+}
+
+
+
+/* ////// */
+
+.sidebar h1 {
+  margin: 20px 0;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.home {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  padding: 80px 0;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+.button-section {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+.table-section {
+  margin-top: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.chld {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 10px 30px;
+}
+
+.chld input {
+  margin: 3px 10px;
+}
+
+.red {
+  color: #f38c8c80;
+  border: 1px solid #f38c8c80;
+}
+
+.inputBlk {
+  padding: 8px;
+  width: 220px;
+  border: 1px black solid;
+  border-radius: 8px;
+  margin: 0px 10px;
+}
